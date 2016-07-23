@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Proc4 {
  // esse int antes do nome signigica um retorno inteiro
   static int mmc(int n1, int n2) {
