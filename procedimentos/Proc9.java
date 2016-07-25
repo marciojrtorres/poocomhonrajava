@@ -20,7 +20,8 @@ public class Proc9 {
     double seno = 0;
     seno = radianos - (potencia(radianos, 3) / fatorial(3))
                     + (potencia(radianos, 5) / fatorial(5))
-                    - (potencia(radianos, 7) / fatorial(7));
+                    - (potencia(radianos, 7) / fatorial(7))
+                    + (potencia(radianos, 9) / fatorial(9));
     return seno;
   }
 
@@ -36,7 +37,10 @@ public class Proc9 {
     // combinando os procedimentos
     System.out.println(seno(radianos(75)));
                     //(seno(1.309))
-                    //(0.9658960023962109)
-                    // aproximado de 0.96592583
+                    //(0.9659270976271132)
+    // é uma resposta aproximada
+    // a esperada de 0.96592583
+    // além disso, double sempre trabalha
+    // com aproximações (ver problemas de precisão)
   }
 }
