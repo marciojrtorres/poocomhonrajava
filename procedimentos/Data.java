@@ -1,4 +1,4 @@
-public class Data {
+class Data {
                        // Jan Fev Mar Abr Mai Jun
   static int[] diasMes = {31, 28, 31, 30, 31, 30,
                           31, 31, 30, 31, 30, 31};
@@ -32,5 +32,18 @@ public class Data {
     return data[0] + "/"
          + data[1] + "/"
          + data[2];
+  }
+
+  static void amanha2(int[] data) {
+    data[0] = data[0] + 1;
+    if (data[0] > diasMes[data[1] - 1]) {
+      data[0] = 1;
+      if (data[1] < 12) {
+        data[1] = data[1] + 1;
+      } else {
+        data[1] = 1;
+        data[2] = data[2] + 1;
+      }
+    }
   }
 }
