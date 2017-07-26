@@ -5,7 +5,7 @@ class Contador {
 
   Contador(int limite) {
     this.limite = limite;
-    this.valor = 0;
+    this.valor  = 0;
   }
 
   int valor() {

@@ -9,6 +9,8 @@ class Veiculo {
 
   @Override
   public boolean equals(Object outroObjeto) {
+    // se forem a mesma instância obviamente eles têm o mesmo estado
+    if (this == outroObjeto) return true;
     // verifica se o parâmetro é um Veiculo (e também se não é nulo)
     if (!(outroObjeto instanceof Veiculo)) return false;
     // conversão (coerção (cast)) do outroObjeto para o tipo Veiculo

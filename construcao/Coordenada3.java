@@ -10,7 +10,7 @@ class Coordenada {
 
   Coordenada() {
     // ou this(0, 0), ou nada
-    this.latitude = 0;
+    this.latitude  = 0;
     this.longitude = 0;
   }
 

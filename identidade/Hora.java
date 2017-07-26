@@ -10,6 +10,8 @@ class Hora {
 
   @Override
   public boolean equals(Object outroObjeto) {
+    // se forem a mesma instância obviamente eles têm o mesmo estado
+    if (this == outroObjeto) return true;
     // verifica se o parâmetro é uma Hora (e também se não é nulo)
     if (!(outroObjeto instanceof Hora)) return false;
     // conversão (coerção (cast)) do outroObjeto para o tipo Hora

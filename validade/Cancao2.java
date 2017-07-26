@@ -19,8 +19,8 @@ class Cancao {
     this.duracao = d;
   }
   // accessors: métodos para consultar título, artista, album e duração
-  String  titulo() { return this.titulo; }
+  String  titulo()  { return this.titulo;  }
   String  artista() { return this.artista; }
-  String  album() { return this.album; }
+  String  album()   { return this.album;   }
   Integer duracao() { return this.duracao; }
 }
