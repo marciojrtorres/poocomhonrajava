@@ -5,7 +5,7 @@ public class Proc4 {
   static int mmc(int n1, int n2) {
     int maior = n1 > n2 ? n1 : n2;
     int mmc = maior;
-    while (mmc % n1 != 0 || mmc % n1 != 0) {
+    while (mmc % n1 != 0 || mmc % n2 != 0) {
       mmc += maior;
     }
     // aqui trocamos o print pelo return
